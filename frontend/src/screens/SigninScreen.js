@@ -53,7 +53,7 @@ const SigninScreen = (props) => {
           <button type="submit">התחבר</button>
         </div>
         <div>
-          אין לך חשבון?{" "}
+          ?אין לך חשבון
           <Link style={{ color: "blue", fontSize: "1.6rem" }} to="/register">
             הירשם
           </Link>

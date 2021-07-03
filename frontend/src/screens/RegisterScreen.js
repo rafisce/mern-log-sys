@@ -82,7 +82,7 @@ const RegisterScreen = (props) => {
         </div>
 
         <div>
-          יש לך חשבון?{" "}
+          ?יש לך חשבון
           <Link style={{ color: "blue", fontSize: "1.6rem" }} to="/signin">
             התחבר
           </Link>
