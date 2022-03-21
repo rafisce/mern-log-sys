@@ -1,7 +1,4 @@
-import jwt from "jsonwebtoken";
 import React from "react";
-import { useSelector } from "react-redux";
-import { combineReducers } from "redux";
 
 const Profile = (props) => {
   const user = props.userInfo;

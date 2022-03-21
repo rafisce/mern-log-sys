@@ -1,7 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-import { mongodbURI } from "../config/keys.js";
+
 import userRouter from "./routers/userRouter.js";
 
 const app = express();
@@ -10,7 +10,10 @@ dotenv.config();
 
 app.use(express.json());
 
-const db = mongodbURI;
+const db =
+  "mongodb://mongo:27017/user-log-sys" ||
+  process.env.mongodbURI ||
+  "mongodb://127.0.0.1:27017/user-log-sys";
 
 app.use("/api/users", userRouter);
 

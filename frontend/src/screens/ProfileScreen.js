@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import MessageBox from "../componenets/MessageBox";
-import Profile from "../componenets/Profile";
+import MessageBox from "../components/MessageBox";
+import Profile from "../components/Profile";
 
 const ProfileScreen = (props) => {
   const userSignin = useSelector((state) => state.userSignin);

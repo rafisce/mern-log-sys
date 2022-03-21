@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, Redirect } from "react-router-dom";
 import { signin } from "../actions/userActions";
-import MessageBox from "../componenets/MessageBox";
+import MessageBox from "../components/MessageBox";
 
 const SigninScreen = (props) => {
   const [email, setEmail] = useState("");
@@ -26,6 +26,7 @@ const SigninScreen = (props) => {
 
   return (
     <div>
+      {error && <MessageBox error={error} variant="danger" />}
       <form className="form" type="submit" onSubmit={submitHandler}>
         <div>
           <label htmlFor="email">

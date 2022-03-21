@@ -2,8 +2,8 @@ import React from "react";
 
 const MessageBox = (props) => {
   return (
-    <div>
-      <div>{props.error}</div>
+    <div className={`alert alert-${props.variant || "info"}`}>
+      {props.error}
     </div>
   );
 };

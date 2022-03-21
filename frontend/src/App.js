@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Link, Route } from "react-router-dom";
-import HomeScreen from "./screens/HomeScreen";
+
 import SigninScreen from "./screens/SigninScreen";
 import RegisterScreen from "./screens/RegisterScreen";
 import ProfileScreen from "./screens/ProfileScreen";
@@ -16,7 +16,7 @@ function App() {
   };
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className="App" dir="rtl">
         <header className="center">
           <div>{userInfo && <Link onClick={logoutHandler}>התנתק</Link>}</div>
         </header>
